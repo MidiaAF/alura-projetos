@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+     background-color: black;
+    color: white; 
+    font-family: comic sans-serif;
+    height: 100vh; /*todo conteudo  */   
+    line-height: 1.5;
+    box-sizing: border-box; /* fica tudo agrupado, não sai pra fora do conteudo*/
+
+}
+
+
+
+.titulo-destaque{
+    color:#22d4fd;
+}
+
+.apresentacao{
+    margin: 10% 30%; /*margin de todos os cantos de 10%* e 30% espaço entre foto e text/    
+    align-items: center; /* para alinhar os elementos, centralizar dentro class */
+    display:flex;/*colocar como propriedade para posicionar o elemento*/
+    justify-content: space-between; /*espaçamento entre blocos (texto e imagem)*/  
+    
+}
+
+.apresentacao-conteudo{    
+    width: 615px;
+    display: flex;/*deixou texto um ao lado do outro */
+    flex-direction:column;/*colocou cada bloco de texto em baixo do outro */
+    gap:40px; /*espaçamento entre letras */
+
+}
+
+.apresentacao-conteudo-titulo{
+    font-size: 36px;
+    font-family:'Krona One', sans-serif; /*font que esta no inicio do codigo, tirada google fonts*/
+
+}
+
+.apresentacao-conteudo-texto{
+    font-size: 24px;
+    font-family: 'Montserrat, sans-serif';
+}
+
+
+.apresentacao-links{/*links insta e guithub*/
+    display:flex; 
+    justify-content: space-between; /*espaçamento entre blocos (texto e imagem)*/  
+   
+}
+
+
+.links{
+    background-color: aqua;
+    color: black;  
+    font-family: 'Montserrat, sans-serif';
+    width: 200px;
+    border-radius: 16px;
+    padding: 21.5px 0;   
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;/*peso da font*/
+    text-decoration: none;   
+     
+
+}
+
+img{
+    border-radius:10%;  
+    width: 400px;
+    height: 400px;      
+    
+}
+
+
