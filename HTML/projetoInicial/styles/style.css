@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    
+}
+
+body{
+    background-color: black;
+    color: white; 
+    font-family: comic sans-serif;      
+    line-height: 1.5;
+    box-sizing: border-box; /* fica tudo agrupado, não sai pra fora do conteudo*/
+    padding: 2% 0 0 2%;
+
+}
+
+
+
+.titulo{
+    color: aqua;
+    padding:2% 0 0 30%;
+    font-size: 40PX;
+}
+
+
+
+.cabecalho{
+    padding:2% 0 0 30%;
+       
+    
+}
+
+.menu{
+    display: flex;
+    gap:80px;
+
+
+}
+
+.menu-link{
+    color: #22D4FD;
+    font-family: 'Montserrat, sans-serif';
+    font-size: 24px;
+    font-weight: 600;/*peso da font*/
+    text-decoration: none; 
+}
+
+
+.apresentacao{
+    margin: 5% 30%;/* margin de todos os cantos de 5%* e 30% espaço entre foto e text   */  
+    align-items: center; /* para alinhar os elementos, centralizar dentro class */
+    display:flex;/*colocar como propriedade para posicionar o elemento*/
+    justify-content: space-between; /*espaçamento entre blocos (texto e imagem)*/  
+    
+    
+}
+
+.apresentacao-conteudo{    
+    width: 615px;
+    display: flex;/*deixou texto um ao lado do outro */
+    flex-direction:column;/*colocou cada bloco de texto em baixo do outro */
+    gap:40px; /*espaçamento entre letras */
+
+}
+
+.apresentacao-conteudo-titulo{
+    font-size: 36px;
+    font-family:'Krona One', sans-serif; /*font que esta no inicio do codigo, tirada google fonts*/
+
+}
+
+.titulo-destaque{
+    color:#22d4fd;
+}
+
+.apresentacao-conteudo-texto{
+    font-size: 24px;
+    font-family: 'Montserrat, sans-serif';
+    
+}
+
+
+.apresentacao-links{/*links insta e guithub*/
+    display:flex;/*para posicionar elementos na tela(coloca quadrados lado a lado )*/
+    flex-direction:column ; /*colocou os botões na posição de coluna */
+    justify-content: space-between; /*espaçamento entre blocos (texto e imagem)*/  
+    align-items: center;/*centraliza os elementos de acordo com a posição do flex-direction*/
+    gap: 32px; /* adiciona espaçamento iguais entre links*/
+   
+}
+
+.subtitulo{
+    font font-family: 'Krona One', sans-serif;
+    font-weight: 400;/*peso da font*/
+    font-size:30px;
+    
+ 
+}
+
+
+.links{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center; /*centralizar imagem e text ( alinhado display:flex)*/
+    gap: 16px;
+    border:3px solid #22D4FD; /*borda nos links*/
+    color: white;
+    font-family: 'Montserrat, sans-serif';
+    width: 378px;
+    border-radius: 8px;
+    padding: 21.5px 0;   
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;/*peso da font*/
+    text-decoration: none;   
+     
+
+}
+
+.links:hover{
+    background-color:#272727;
+
+
+}
+
+.lolo{    
+        border-radius:10%;  
+        width: 500px;
+        height: 600px;         
+    
+}
+
+
+
+.rodape {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #22D4FD;
+    color: #272727;
+    font-size: 24px;
+    font-family: 'Montserrat, sans-serif';
+    font-weight: 400px;
+    text-align: center;
+    padding: 24px;
+    
+}
+

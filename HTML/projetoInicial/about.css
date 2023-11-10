@@ -1,0 +1,45 @@
+
+*{
+    
+
+}
+
+body{
+    background-color: black;
+    color:white;
+}
+
+.cabecalho{
+    
+}
+
+h1{
+    color: aqua;    
+   
+}
+
+section{
+    font-size: 25px;
+}
+
+.lolo2{
+        border-radius:10%;  
+        width: 500px;
+        height: 600px; }
+
+
+
+.rodappe {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #22D4FD;
+    color: #272727;
+    font-size: 24px;
+    font-family: 'Montserrat, sans-serif';
+    font-weight: 400px;
+    text-align: center;
+    padding: 24px;
+    
+}
+
