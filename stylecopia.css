@@ -10,12 +10,12 @@
 }
 
 body{
-    background-color: hotpink;
+    background-color: rgba(244, 162, 9, 0.744);
     color: white; 
     font-family: comic sans-serif;      
     line-height: 1.5;
     box-sizing: border-box; /* fica tudo agrupado, não sai pra fora do conteudo*/
-    padding: center;
+    padding: 2% 0 0 2%;
 
 }
 
@@ -34,20 +34,20 @@ body{
        
     
 }
+
 .menu{
-    word-spacing: 10px;
+    /* display: flex;
+    gap:80px; */
+    margin:auto;
+    
 }
 
-
-.menu-link{    
-    text-align: center;
+.menu-link{
     color: #22D4FD;
     font-family: 'Montserrat, sans-serif';
     font-size: 24px;
     font-weight: 600;/*peso da font*/
     text-decoration: none; 
-    background-color: bisque;
-   
 }
 
 
@@ -55,27 +55,24 @@ body{
     margin: 5% 30%;/* margin de todos os cantos de 5%* e 30% espaço entre foto e text   */  
     align-items: center; /* para alinhar os elementos, centralizar dentro class */
     display:flex;/*colocar como propriedade para posicionar o elemento*/
-    justify-content: space-between; /*espaçamento entre blocos (texto e imagem)*/ 
-   
-    
+    justify-content: space-between; /*espaçamento entre blocos (texto e imagem)*/  
     
     
 }
 
 .apresentacao-conteudo{    
-    width: 615px;   
-    padding: 10px;
+    width: 615px;
     display: flex;/*deixou texto um ao lado do outro */
     flex-direction:column;/*colocou cada bloco de texto em baixo do outro */
     gap:40px; /*espaçamento entre letras */
-    
+    background-color: blue;
 
 }
 
 .apresentacao-conteudo-titulo{
-    font-size: 30px;
-    font-family:'Krona One', sans-serif;
-    
+    font-size: 36px;
+    font-family:'Krona One', sans-serif; /*font que esta no inicio do codigo, tirada google fonts*/
+    background-color: red;
 
 }
 
@@ -85,17 +82,10 @@ body{
 }
 
 .apresentacao-conteudo-texto{
-    font-size: 30px;
+    font-size: 24px;
     font-family: 'Montserrat, sans-serif';
+    background-color: bisque;
     
-    
-}
-
-
-.subtitulo{
-    font-size:25px;
-    font-family: 'Krona One', sans-serif;
-    font-weight: 400;
 }
 
 
@@ -104,7 +94,7 @@ body{
     flex-direction:column ; /*colocou os botões na posição de coluna */
     justify-content: space-between; /*espaçamento entre blocos (texto e imagem)*/  
     align-items: center;/*centraliza os elementos de acordo com a posição do flex-direction*/
-    gap: 20px; /* adiciona espaçamento iguais entre links*/
+    gap: 32px; /* adiciona espaçamento iguais entre links*/
     font font-family: 'Krona One', sans-serif;
     font-weight: 400;/*peso da font*/
     font-size:30px;    
@@ -112,56 +102,51 @@ body{
  
 }
 
-.icone {
-    vertical-align: middle;/*para alinhar verticalmente a imagem com o texto*/
-  }
 
-.links{ 
-   
-    width: 378px;/*tamanho do botton*/
-    text-align: center;
+.links{
+    display: flex;   
+    justify-content: center;      
     border:3px solid #22D4FD; /*borda nos links*/
     color: white;
     font-family: 'Montserrat, sans-serif';
-    font-size: 30px;
-    font-weight: 600;   
+    width: 378px;
     border-radius: 8px;
-    padding: 21.5px 0;   
+    padding: 21.5px 0; 
+    text-align: center;    
+    font-size: 24px;
     /* font-weight: 600;peso da font*/ 
-    text-decoration: none;      
-    line-height: 1.5;/* Alinha o texto verticalmente no centro do botão */  
+    text-decoration: none;   
+    background-color: orange;
      
 
 }
 
 .links:hover{
-    background-color:#272727;/*mudar a cor quando passar o mouse*/
+    background-color:#272727;
 
 
 }
 
 .lolo{    
-    border-radius:10%;  
-    height:650px;
-    width: 500px;
-    background-color: yellow;         
+        border-radius:10%;  
+        width: 500px;
+        height: 600px;
+        background-color: yellow;         
     
 }
 
 
 
-.rodape{
+.rodape {
     position: fixed; /*fixar texto no final da tela*/
     bottom: 0; /*colocou o botão no final da pagina*/
-    width: 100%;
+    width: 100%; /*deixar o background color na parte total da tela*/    
     background-color: orange;
-    color: #272727;
-    padding: 20px;
+    color: white;
+    padding: 10px;
     text-align: center;
     font-family: 'Montserrat, sans-serif';
-    font-size:25px;   
+    font-size:25px;     
     
 }
-
-
 
