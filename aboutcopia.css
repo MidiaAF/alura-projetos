@@ -1,0 +1,98 @@
+
+/* *{
+    margin: 0;
+    padding: 0;  
+} */
+
+
+body{
+    background-color: rgba(128, 0, 128, 0.6);
+    color:white;
+    font-family: comic sans-serif; 
+
+}
+
+.cabecalho{    
+    font-size: 20px;
+    background-color: ;
+
+}
+
+
+.menu{
+    margin:auto;
+    margin-top: 5%;/* porporção abaixo do top*/
+    width: 30%;    
+    display: flex;
+    gap: 30px; /*espaço  entre sas palavras Home e Sobre mim*/    
+    text-align: center;
+
+}
+
+
+.menu-link{
+    color: #2622fde1;
+    font-family:'Krona One', sans-serif; 
+    font-size: 24px;
+    font-weight: 600;/*peso da font*/
+    text-decoration: none; 
+    
+}
+
+
+.conteudo-principal{
+    /* margin: 5% 30%; 5% da esquerda (lateral ) 30% do top sentido para baixo   */    
+    width: 800px;
+    margin:auto;
+    
+         
+}    
+
+
+.apresentacao-conteudo{
+    width: 1000px;
+    display: flex;
+    align-items: center;/*alinhou o texto e a imagem */    
+}
+
+
+
+.titulo{
+    margin: 5% 30% ;/*5% da esquerda (lateral ) 30% do top sentido para baixo*/ 
+    font-size: 34px;
+    font-family:'Krona One', sans-serif; 
+    color: #4f086d;     
+    text-align: center;
+}
+
+.texto{     
+    font-size: 33.3px;
+    color:white;
+    font-family: 'Montserrat, sans-serif';    
+ 
+}
+
+
+.lolo2{
+    border-radius:10%; /*arredondar bordas da imagem*/
+    height:650px;
+    width: 500px;
+    margin: 20px;
+    
+
+ }   
+    
+
+.rodape{
+    position: fixed; /*fixar texto no final da tela*/
+    bottom: 0; /*colocou o botão no final da pagina*/
+    width: 100%; /*deixar o background color na parte total da tela*/    
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Montserrat, sans-serif';
+    font-size:25px;           
+    }
+    
+    

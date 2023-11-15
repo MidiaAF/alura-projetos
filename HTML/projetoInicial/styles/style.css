@@ -1,94 +1,96 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&display=swap');
 
+:root{ /*padronização de cores e fontes usadas em todo projeto */
+    --cor-principal:rgb(188, 79, 134);
+    --cor-secundaria: #22d5fdca;
+    --cor-terciaria: rgba(244, 170, 34, 0.834);
 
-* {
-    margin: 0;
+    --fonte-principal:'Krona One', sans-serif;
+    --fonte-secundaria:'Montserrat, sans-serif';
+}
+
+* {   
     padding: 0;
     margin: auto;
     
 }
 
 body{
-    background-color: hotpink;
+    background-color:var(--cor-principal);    
     color: white; 
     font-family: comic sans-serif;      
     line-height: 1.5;
     box-sizing: border-box; /* fica tudo agrupado, não sai pra fora do conteudo*/
     padding: center;
+}
 
+.cabecalho{
+    width: 100%;      
+    border-bottom-right-radius: 50%;/* Raio para arredondar os cantos */
+    padding:2%; /*deixar cabeçalho no centro "Home" e  "Sobre mim"*/ 
+    background-color: #22d5fdca;        
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.566);
 }
 
 
 
 .titulo{
     color: aqua;
-    padding:2% 0 0 30%;
+    padding:3% 0 0 30%;
     font-size: 40PX;
-}
+    }  
 
-
-
-.cabecalho{
-    padding:2% 0 0 30%;
-       
-    
-}
-.menu{
-    word-spacing: 10px;
-}
-
-
-.menu-link{    
+.menu{    
+    margin:auto;
+    padding: 2%;
+    margin-top: 5%;/* porporção abaixo do top*/
+    width: 30%;    
+    display: flex;
+    gap: 30px; /*espaço  entre as palavras Home e Sobre mim*/    
     text-align: center;
-    color: #22D4FD;
-    font-family: 'Montserrat, sans-serif';
-    font-size: 24px;
-    font-weight: 600;/*peso da font*/
-    text-decoration: none; 
-    background-color: bisque;
-   
 }
+
+
+
+
+.menu-link{           
+    color: white;  
+    font-family: 'Montserrat, sans-serif';
+    font-size: 30px;
+    font-weight: 600;/*peso da font*/
+    text-decoration: none;    
+    }    
 
 
 .apresentacao{
-    margin: 5% 30%;/* margin de todos os cantos de 5%* e 30% espaço entre foto e text   */  
+    margin: 2%;
     align-items: center; /* para alinhar os elementos, centralizar dentro class */
-    display:flex;/*colocar como propriedade para posicionar o elemento*/
-    justify-content: space-between; /*espaçamento entre blocos (texto e imagem)*/ 
-   
-    
-    
+    display:flex;/*colocar como propriedade para posicionar o elemento*/    
     
 }
 
 .apresentacao-conteudo{    
     width: 615px;   
-    padding: 10px;
+    padding: 8%;
     display: flex;/*deixou texto um ao lado do outro */
     flex-direction:column;/*colocou cada bloco de texto em baixo do outro */
-    gap:40px; /*espaçamento entre letras */
-    
-
+    gap:40px; /*espaçamento entre letras */    
+    bottom: 100%;   
 }
 
 .apresentacao-conteudo-titulo{
     font-size: 30px;
     font-family:'Krona One', sans-serif;
-    
-
 }
 
 .titulo-destaque{
-    color:#22d4fd;
-    background-color: gray;
+    color:#22d4fd;    
 }
 
 .apresentacao-conteudo-texto{
     font-size: 30px;
-    font-family: 'Montserrat, sans-serif';
-    
-    
+    font-family: 'Montserrat, sans-serif';    
 }
 
 
@@ -107,46 +109,54 @@ body{
     gap: 20px; /* adiciona espaçamento iguais entre links*/
     font font-family: 'Krona One', sans-serif;
     font-weight: 400;/*peso da font*/
-    font-size:30px;    
-   
- 
+    font-size:30px;   
 }
 
 .icone {
     vertical-align: middle;/*para alinhar verticalmente a imagem com o texto*/
   }
 
-.links{ 
-   
+
+.links{     
     width: 378px;/*tamanho do botton*/
     text-align: center;
-    border:3px solid #22D4FD; /*borda nos links*/
+    border:5px solid #22D4FD; /*borda nos links*/
     color: white;
     font-family: 'Montserrat, sans-serif';
     font-size: 30px;
     font-weight: 600;   
     border-radius: 8px;
-    padding: 21.5px 0;   
-    /* font-weight: 600;peso da font*/ 
-    text-decoration: none;      
-    line-height: 1.5;/* Alinha o texto verticalmente no centro do botão */  
-     
-
+    padding: 21.5px 0;     
+    text-decoration: none;    
 }
 
 .links:hover{
-    background-color:#272727;/*mudar a cor quando passar o mouse*/
-
-
+    background-color:rgba(255, 255, 255, 0.57);/*mudar a cor quando passar o mouse*/
+    color: rgba(221, 44, 133, 0.845);
+    border: 5px solid #22D4FD;
 }
 
-.lolo{    
-    border-radius:10%;  
-    height:650px;
-    width: 500px;
-    background-color: yellow;         
+.imagem-lolo{
+    position: fixed;/* Define a posição como fixa para que a imagem fique fixa na tela */
+    left: 0;/* Coloca a imagem no canto esquerdo da tela */
+    bottom: 70px; /* Ajuste a distância acima do footer (ajuste conforme necessário) */
+    z-index: 999; /* Garante que a imagem fique acima de outros elementos, se houver */
+}
+ 
+
+.imagem-lolo img{      
+    height:auto;/* Mantém a proporção original da imagem */
+    width: 600px;  /* Tamanho desejado */
     
 }
+
+.borboleta{
+    position: absolute;
+    right:0;
+    border-top-right-radius: 20px;
+   
+}
+
 
 
 
@@ -154,8 +164,8 @@ body{
     position: fixed; /*fixar texto no final da tela*/
     bottom: 0; /*colocou o botão no final da pagina*/
     width: 100%;
-    background-color: orange;
-    color: #272727;
+    background-color: rgba(244, 170, 34, 0.834);
+    color: white;
     padding: 20px;
     text-align: center;
     font-family: 'Montserrat, sans-serif';
