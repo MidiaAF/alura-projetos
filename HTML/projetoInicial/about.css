@@ -5,9 +5,14 @@
 }
 
 
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+ }
+
 * {   
     padding: 0;
-    margin: auto;
+    margin: 0;
     box-sizing: border-box;
     
 }
@@ -73,8 +78,7 @@ body{
     
    /* background-image: linear-gradient(to right, #d903e2, #08abff,#ff8495, #31ffcc,#d903e2); Para definir as cores 
     -webkit-background-clip: text;é usada para aplicar o gradiente apenas ao texto
-    color: transparent; é usado para tornar o texto transparente, revelando o gradiente de fundo*/
-    
+    color: transparent; é usado para tornar o texto transparente, revelando o gradiente de fundo*/   
 
 }
 
@@ -92,15 +96,8 @@ body{
     left: 0;/* Ajuste a posição horizontal desejada */
     bottom:6%;/* Ajuste a posição vertical desejada */
     z-index:999 ; /* Garante que a imagem fique acima de outros elementos, se houver */
+    width: 300px;  /* Tamanho desejado */
 }
-
-.imagem-lolo3 img{
-    height:auto;/* Mantém a proporção original da imagem */
-    width: 700px;  /* Tamanho desejado */
-   
-}
-
-
 
 .rodape{
     position: fixed; /*fixar texto no final da tela*/
@@ -108,7 +105,7 @@ body{
     width: 100%; /*deixar o background color na parte total da tela*/    
     background-color:#e5c618c7;
     color: white;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
     font-family: 'Montserrat, sans-serif';
     font-size:25px; }
