@@ -26,21 +26,17 @@ body{
 
 
 .cabecalho{
-    padding:3%; /*deixar cabeçalho no centro "Home" e  "Sobre mim"*/
-    width: 100%;      
-    border-bottom-right-radius: 40%;/* Raio para arredondar os cantos */
-    border-bottom-left-radius: 40%;/* Raio para arredondar os cantos */    
+    padding:4%; /*deixar cabeçalho no centro "Home" e  "Sobre mim"*/        
     background-color:var(--cor-principal)    ;  
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.566);
 }
 
 .menu{    
-    margin:auto;    
-    width: 100%;    
-    display: flex;
-    gap: 15px; /*espaço  entre sas palavras Home e Sobre mim*/    
-    text-align: center;  
-    
+    position: absolute;    
+    left: 0;     
+    display: flex;/*espaço  entre sas palavras Home e Sobre mim*/  
+    gap: 10px; /*espaço  entre sas palavras Home e Sobre mim*/  
+   
 }
 
 .menu-link{
@@ -63,22 +59,19 @@ body{
 
 .conteudo-principal{
     position:absolute;
-    left: 30%;   
-    top: 20%;  
+    left: 25%;   
+    top: 15%;  
     width: 100%;   
     font-size: 3px;
-    font-weight: 300px;
-   
+    font-weight: 250px;   
 }    
 
 
 .titulo{    
     color: var(--cor-principal);
-    margin: 1% 3% ; /*5% da esquerda (lateral ) 30% do top sentido para lateral*/    
+    margin: 6% ; /*5% da esquerda (lateral ) 30% do top sentido para lateral*/    
     font-family:'Krona One', sans-serif;   
-    font-size:40px;
-    display: inline-block;
-    text-align: center;
+    font-size:40px;     
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.075);       
    /* background-image: linear-gradient(to right, #d903e2, #08abff,#ff8495, #31ffcc,#d903e2); Para definir as cores 
     -webkit-background-clip: text;é usada para aplicar o gradiente apenas ao texto
@@ -88,14 +81,11 @@ body{
 .texto{     
     position: absolute; 
     left: 5%;   
-    margin-top: 10%; 
+    margin-top: 5%; 
     width: 60%;      
     color:white;
-    font-size: 25px;
-    font-family:'Krona One', sans-serif;    
-  
-    
- 
+    font-size: 22px;
+    font-family:'Krona One', sans-serif;  
 }
 
 .imagem-lolo3{

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&display=swap');
 
+
+
 :root{ /*padronização de cores e fontes usadas em todo projeto */
     --cor-principal:rgba(188, 79, 133, 0.89);
     --cor-secundaria: #22d5fdca;
@@ -34,21 +36,23 @@ body{
     
 .cabecalho{
     width: 100%; 
-    padding: 5%;/*novo*/    
+    padding: 10px;/* 5px novo*/    
     border-bottom-right-radius: 50%;/* Raio para arredondar os cantos */
     border-bottom-left-radius: 50%;/* Raio para arredondar os cantos */
     padding:30px; /*deixar cabeçalho no centro "Home" e  "Sobre mim"*/ 
     background-color:var(--cor-principal)    ;  
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.566);       
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.566); 
+            
 }
 
 .menu{        
-    text-align: center;
+
     width: 100%;
     flex-direction: column;      
-    word-spacing: 20px; /* espaço entre as palavras Home / sobre mim/ galeria / Ajuste este valor conforme necessário */
+    word-spacing: 10px; /* espaço entre as palavras Home / sobre mim/ galeria / Ajuste este valor conforme necessário */
     border-radius: 20px;
-    padding: 3%;       
+    padding: 3%;     
+    
 }
 
 .menu-link{
@@ -58,6 +62,7 @@ body{
     font-size: 22px;
     font-weight: 600;/*peso da font*/
     text-decoration: none;    
+    
 } 
 
 .menu-link:hover{
@@ -70,10 +75,9 @@ body{
 
 .apresentacao{
     position:absolute;
-    left: 25%;  
-    top: 7%;     /*distancia do conteudo pro topo*/
-    margin:1% 1% 1%; /* da esquerda (lateral ) 30% do top sentido para lateral*/
-   
+    left: 30%;  
+    top: 10%;     /*distancia do conteudo pro topo*/
+    margin:1% 1% 1%; /* da esquerda (lateral ) 30% do top sentido para lateral*/  
 
 }
 
@@ -163,6 +167,10 @@ body{
     font-family: 'Montserrat, sans-serif';
     font-size:20px; 
 }
+
+
+
+
 
 
  /*.titulo{
