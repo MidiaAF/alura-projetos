@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&display=swap');
 
 :root{ /*padronização de cores e fontes usadas em todo projeto */
-    --cor-principal:rgb(188, 79, 134);
+    --cor-principal:rgba(188, 79, 133, 0.89);
     --cor-secundaria: #22d5fdca;
     --cor-terciaria: rgba(244, 170, 34, 0.834);
 
@@ -17,99 +17,138 @@
     
 * {   
     padding: 0;
-    margin: auto;
+    margin: 0;
  }     
 
 
     
 body{    
-    /*background-color:#6f9ded;  */   
+    /*background-color:#6f9ded; #179cbab6;   */   
     font-family: comic sans-serif; 
-    background-color: #179cbab6;  
+    background-color: #56b6c1bf;  
     overflow-x: hidden;  
+    font-size: 16px;
     
     }
     
     
 .cabecalho{
-    width: 100%;      
+    width: 100%; 
+    padding: 5%;/*novo*/    
     border-bottom-right-radius: 50%;/* Raio para arredondar os cantos */
     border-bottom-left-radius: 50%;/* Raio para arredondar os cantos */
     padding:50px; /*deixar cabeçalho no centro "Home" e  "Sobre mim"*/ 
     background-color:var(--cor-principal)    ;  
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.566);
-    
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.566);       
 }
 
-.menu{
-
-    gap: 30px;/* espaço  entre sas palavras Home e Sobre mim   */
+.menu{        
     text-align: center;
     width: 100%;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: column;      
+    word-spacing: 20px; /* espaço entre as palavras Home / sobre mim/ galeria / Ajuste este valor conforme necessário */
+    border-radius: 20px;
+    padding: 5px;   
 }
-
 
 .menu-link{
-    padding: 10px;
+    padding: 3px;
     color:white;
     font-family:'Krona One', sans-serif; 
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;/*peso da font*/
-    text-decoration: none;     
+    text-decoration: none;    
+} 
+
+.menu-link:hover{
+    background-color:rgba(255, 255, 255, 0.787); 
+    color: rgb(0, 213, 255);
+    border: 0.5px solid pink ; 
+    border-radius: 10px;   
 }
 
 
-.apresentacao-conteudo{
-    position: absolute;
-    padding:20%;
-    width: 1000px;    
+.apresentacao{
+    position:absolute;
+    left: 25%;  
+    top: 7%;     /*distancia do conteudo pro topo*/
+    margin:1% 1% 1%; /* da esquerda (lateral ) 30% do top sentido para lateral*/
+   
+
 }
 
+.apresentacao-conteudo{    
+    margin:25% 20% 1%; /* da esquerda (lateral ) 30% do top sentido para lateral*/
+    }
 
-.titulo{
+.apresentacao-conteudo-titulo {
+    color:var(--cor-principal);
+    margin:5% 0% 5%; /* da esquerda (lateral ) 30% do top sentido para lateral*/
+    font-size:31px;    
+}
+
+.titulo-destaque{
+   color:rgb(10, 144, 202);
+   }
+
+.apresentacao-conteudo-texto{    
+    color:beige;
+    font-family: comic sans-serif;  
+    font-size: 20px;
+    font-family:'Krona One', sans-serif;      
+    margin:4% 0% 5%; /* da esquerda (lateral ) 30% do top sentido para lateral*/
+}  
+
+
+.subtitulo{   
     color: var(--cor-principal);
-    margin: 15% 30% ; /*5% da esquerda (lateral ) 30% do top sentido para lateral*/    
-    font-family:'Krona One', sans-serif;   
-    font-size: 60px;
-    display: inline-block;
-    text-align: center;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.075);
-    
-    /* background-image: linear-gradient(to right, #d903e2, #08abff,#ff8495, #31ffcc,#d903e2); Para definir as cores 
-    -webkit-background-clip: text;é usada para aplicar o gradiente apenas ao texto
-    color: transparent; é usado para tornar o texto transparente, revelando o gradiente de fundo*/ 
-
+    position: absolute;
+    left:35%;       
 }
 
-.texto{  
-    left: 100%;   
-    
-    font-size: 33.3px;
-    color:white;
-    font-size: 30px;
-    font-family:'Krona One', sans-serif; 
-    margin: auto;
-    
+.links{
+    display: flex; /*colocando imagem e texto lado a lado*/
+    align-items: center;/*colocando imagem e texto lado a lado*/
+    position: absolute;
+    left:35%;
+    top:109%;/* Ajuste conforme necessário para posicionar abaixo do subtitulo */
+    border: 1px solid rgba(255, 192, 203, 0.5)  ; 
+    border-radius: 8px;   
+    border: 3px solid var(--cor-secundaria); 
+    background-color:rgba(255, 255, 255, 0.794);
+    text-decoration: none;
+    padding: 7px;
+    width: 20%;    
+    color:var(--cor-secundaria);   
+    font-size: 22px;   
 }
+
+.links:hover{
+    display: flex; /*colocando imagem e texto lado a lado*/
+    align-items: center;/*colocando imagem e texto lado a lado*/
+    position: absolute;
+    left:35%;
+    top:109%;/* Ajuste conforme necessário para posicionar abaixo do subtitulo */
+    background-color: white;
+    border: 3px solid var(--cor-principal);
+    border-radius: 8px ;
+    padding: 10px;
+    width: 20%;    
+}
+
 
 .imagem-lolo{
     position: absolute;
-    left: 0;/* Ajuste a posição horizontal desejada */
-    bottom:4.7%;/* Ajuste a posição vertical desejada */
+    left: 0;    
+    bottom:4.5%;/* Ajuste a posição vertical desejada */
     z-index:999 ; /* Garante que a imagem fique acima de outros elementos, se houver */
-    height:auto;/* Mantém a proporção original da imagem */
-    width: 700px;  /* Tamanho desejado */
-    
 }
-
 
  .borboleta{
     position: absolute;
-    right:0;    
+    right:0; 
+    top: 15%;   
     }
-
 
 
 .rodape{
@@ -123,3 +162,18 @@ body{
     font-family: 'Montserrat, sans-serif';
     font-size:20px; 
 }
+
+
+ /*.titulo{
+    color: var(--cor-principal);
+    margin: 15% 30% ; 5% da esquerda (lateral ) 30% do top sentido para lateral
+    font-family:'Krona One', sans-serif;   
+    font-size: 60px;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.075);
+    
+    background-image: linear-gradient(to right, #d903e2, #08abff,#ff8495, #31ffcc,#d903e2); Para definir as cores 
+    -webkit-background-clip: text;é usada para aplicar o gradiente apenas ao texto
+    color: transparent; é usado para tornar o texto transparente, revelando o gradiente de fundo
+}*/ 

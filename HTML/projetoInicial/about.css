@@ -26,55 +26,50 @@ body{
 
 
 .cabecalho{
+    padding:1%; /*deixar cabeçalho no centro "Home" e  "Sobre mim"*/
     width: 100%;      
-    border-bottom-right-radius: 50%;/* Raio para arredondar os cantos */
-    border-bottom-left-radius: 50%;/* Raio para arredondar os cantos */
-    padding:20px; /*deixar cabeçalho no centro "Home" e  "Sobre mim"*/ 
+    border-bottom-right-radius: 40%;/* Raio para arredondar os cantos */
+    border-bottom-left-radius: 40%;/* Raio para arredondar os cantos */    
     background-color:var(--cor-principal)    ;  
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.566);
 }
 
 .menu{
     margin:auto;
-    padding: 2%;
-    margin-top: 5%;/* porporção abaixo do top*/
+    padding: 1%;
+    margin-top: 2%;/* porporção abaixo do top*/
     width: 30%;    
     display: flex;
-    gap: 30px; /*espaço  entre sas palavras Home e Sobre mim*/    
+    gap: 15px; /*espaço  entre sas palavras Home e Sobre mim*/    
     text-align: center;}
 
 
 .menu-link{
     color:white;
     font-family:'Krona One', sans-serif; 
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;/*peso da font*/
     text-decoration: none;     
 }
 
 
 .conteudo-principal{
-    /* margin: 5% 30%; 5% da esquerda (lateral ) 30% do top sentido para baixo   */    
-    width: 800px;
-    margin:auto;         
+    position:absolute;
+    left: 30%;     
+    background-color: black;   
+    font-size: 3px;
 }    
-
-
-.apresentacao-conteudo{
-    padding:10%;
-    width: 1000px;    
-}
-
 
 
 .titulo{
     color: var(--cor-principal);
     margin: 15% 30% ; /*5% da esquerda (lateral ) 30% do top sentido para lateral*/    
     font-family:'Krona One', sans-serif;   
-    font-size: 60px;
+    font-size:40px;
     display: inline-block;
     text-align: center;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.075);
+    background-color: aqua;
     
    /* background-image: linear-gradient(to right, #d903e2, #08abff,#ff8495, #31ffcc,#d903e2); Para definir as cores 
     -webkit-background-clip: text;é usada para aplicar o gradiente apenas ao texto
@@ -93,19 +88,22 @@ body{
 
 .imagem-lolo3{
     position: absolute;
-    left: 0;/* Ajuste a posição horizontal desejada */
-    bottom:6%;/* Ajuste a posição vertical desejada */
-    z-index:999 ; /* Garante que a imagem fique acima de outros elementos, se houver */
-    width: 300px;  /* Tamanho desejado */
+    left: 0; /*Ajuste a posição horizontal desejada */
+    bottom:4.7%; /*Ajuste a posição vertical desejada */
+    z-index:999 ;  /*Garante que a imagem fique acima de outros elementos, se houver */
+    width: 300px;   /*Tamanho desejado */
 }
 
-.rodape{
-    position: fixed; /*fixar texto no final da tela*/
-    bottom: 0; /*colocou o botão no final da pagina*/
-    width: 100%; /*deixar o background color na parte total da tela*/    
-    background-color:#e5c618c7;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-family: 'Montserrat, sans-serif';
-    font-size:25px; }
+
+    .rodape{
+        position: fixed; /*fixar texto no final da tela*/
+        bottom: 0; /*colocou o botão no final da pagina*/
+        width: 100%; /*deixar o background color na parte total da tela*/    
+        background-color:#e5c618c7;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        font-family: 'Montserrat, sans-serif';
+        font-size:20px; 
+    }
+    
