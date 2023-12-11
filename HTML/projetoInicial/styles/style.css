@@ -37,7 +37,7 @@ body{
     padding: 5%;/*novo*/    
     border-bottom-right-radius: 50%;/* Raio para arredondar os cantos */
     border-bottom-left-radius: 50%;/* Raio para arredondar os cantos */
-    padding:50px; /*deixar cabeçalho no centro "Home" e  "Sobre mim"*/ 
+    padding:30px; /*deixar cabeçalho no centro "Home" e  "Sobre mim"*/ 
     background-color:var(--cor-principal)    ;  
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.566);       
 }
@@ -48,14 +48,14 @@ body{
     flex-direction: column;      
     word-spacing: 20px; /* espaço entre as palavras Home / sobre mim/ galeria / Ajuste este valor conforme necessário */
     border-radius: 20px;
-    padding: 5px;   
+    padding: 3%;       
 }
 
 .menu-link{
     padding: 3px;
     color:white;
     font-family:'Krona One', sans-serif; 
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 600;/*peso da font*/
     text-decoration: none;    
 } 
@@ -92,7 +92,7 @@ body{
    }
 
 .apresentacao-conteudo-texto{    
-    color:beige;
+    color:rgba(255, 255, 255, 0.763);
     font-family: comic sans-serif;  
     font-size: 20px;
     font-family:'Krona One', sans-serif;      
@@ -104,13 +104,14 @@ body{
     color: var(--cor-principal);
     position: absolute;
     left:35%;       
+
 }
 
 .links{
     display: flex; /*colocando imagem e texto lado a lado*/
     align-items: center;/*colocando imagem e texto lado a lado*/
     position: absolute;
-    left:35%;
+    left:40%;
     top:109%;/* Ajuste conforme necessário para posicionar abaixo do subtitulo */
     border: 1px solid rgba(255, 192, 203, 0.5)  ; 
     border-radius: 8px;   
@@ -127,12 +128,12 @@ body{
     display: flex; /*colocando imagem e texto lado a lado*/
     align-items: center;/*colocando imagem e texto lado a lado*/
     position: absolute;
-    left:35%;
+    left:40%;
     top:109%;/* Ajuste conforme necessário para posicionar abaixo do subtitulo */
     background-color: white;
     border: 3px solid var(--cor-principal);
     border-radius: 8px ;
-    padding: 10px;
+    padding: 7px;
     width: 20%;    
 }
 

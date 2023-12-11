@@ -26,7 +26,7 @@ body{
 
 
 .cabecalho{
-    padding:1%; /*deixar cabeçalho no centro "Home" e  "Sobre mim"*/
+    padding:3%; /*deixar cabeçalho no centro "Home" e  "Sobre mim"*/
     width: 100%;      
     border-bottom-right-radius: 40%;/* Raio para arredondar os cantos */
     border-bottom-left-radius: 40%;/* Raio para arredondar os cantos */    
@@ -34,55 +34,67 @@ body{
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.566);
 }
 
-.menu{
-    margin:auto;
-    padding: 1%;
-    margin-top: 2%;/* porporção abaixo do top*/
-    width: 30%;    
+.menu{    
+    margin:auto;    
+    width: 100%;    
     display: flex;
     gap: 15px; /*espaço  entre sas palavras Home e Sobre mim*/    
-    text-align: center;}
-
+    text-align: center;  
+    
+}
 
 .menu-link{
-    color:white;
+    position: relative;
+    left: 30%;
+    word-spacing: 15px; /*espaçamento entre as palavras do menu*/
+    color: beige;
     font-family:'Krona One', sans-serif; 
     font-size: 25px;
     font-weight: 600;/*peso da font*/
     text-decoration: none;     
 }
 
+.menu-link:hover{
+    background-color: pink;   
+    border: 0.5px solid pink ; 
+    border-radius: 10px; 
+}
+
 
 .conteudo-principal{
     position:absolute;
-    left: 30%;     
-    background-color: black;   
+    left: 30%;   
+    top: 20%;  
+    width: 100%;   
     font-size: 3px;
+    font-weight: 300px;
+   
 }    
 
 
-.titulo{
+.titulo{    
     color: var(--cor-principal);
-    margin: 15% 30% ; /*5% da esquerda (lateral ) 30% do top sentido para lateral*/    
+    margin: 1% 3% ; /*5% da esquerda (lateral ) 30% do top sentido para lateral*/    
     font-family:'Krona One', sans-serif;   
     font-size:40px;
     display: inline-block;
     text-align: center;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.075);
-    background-color: aqua;
-    
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.075);       
    /* background-image: linear-gradient(to right, #d903e2, #08abff,#ff8495, #31ffcc,#d903e2); Para definir as cores 
     -webkit-background-clip: text;é usada para aplicar o gradiente apenas ao texto
-    color: transparent; é usado para tornar o texto transparente, revelando o gradiente de fundo*/   
-
+    color: transparent; é usado para tornar o texto transparente, revelando o gradiente de fundo*/  
 }
 
 .texto{     
-    font-size: 33.3px;
+    position: absolute; 
+    left: 5%;   
+    margin-top: 10%; 
+    width: 60%;      
     color:white;
-    font-size: 30px;
-    font-family:'Krona One', sans-serif; 
-    margin: auto;
+    font-size: 25px;
+    font-family:'Krona One', sans-serif;    
+  
+    
  
 }
 
@@ -95,7 +107,7 @@ body{
 }
 
 
-    .rodape{
+.rodape{
         position: fixed; /*fixar texto no final da tela*/
         bottom: 0; /*colocou o botão no final da pagina*/
         width: 100%; /*deixar o background color na parte total da tela*/    
