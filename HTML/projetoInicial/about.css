@@ -21,8 +21,8 @@ body{
     /*background-color:#6f9ded;  */
     font-family: comic sans-serif; 
     background-color: #179cbab6;  
+    
 }
-
 
 
 .cabecalho{
@@ -56,14 +56,17 @@ body{
     border-radius: 10px; 
 }
 
+.contanier{
+     display: flex;/* Define o contêiner como flexível */
+     justify-content: space-between;
+     align-items: center;/* Alinha os itens verticalmente ao centro */
+}
 
 .conteudo-principal{
-    position:absolute;
-    left: 25%;   
-    top: 15%;  
-    width: 100%;   
-    font-size: 3px;
-    font-weight: 250px;   
+    /*position:relative;    
+    display:flex;*/
+    flex-direction: row;
+    align-items: center;  
 }    
 
 
@@ -76,24 +79,45 @@ body{
    /* background-image: linear-gradient(to right, #d903e2, #08abff,#ff8495, #31ffcc,#d903e2); Para definir as cores 
     -webkit-background-clip: text;é usada para aplicar o gradiente apenas ao texto
     color: transparent; é usado para tornar o texto transparente, revelando o gradiente de fundo*/  
+  
 }
 
+.apresentacao.conteudo{
+    width: 50%; /* Ajuste conforme necessário */
+    color: white;
+    font-size: 22px;
+    font-family: 'Krona One', sans-serif;
+    left: 50%;
+    order: 2;/* Muda a ordem do texto para aparecer depois da imagem */
+}
+
+
 .texto{     
-    position: absolute; 
-    left: 5%;   
+   /* position: absolute; 
+    left: 10%;   */
     margin-top: 5%; 
-    width: 60%;      
+    width: 70%;      
     color:white;
     font-size: 22px;
     font-family:'Krona One', sans-serif;  
 }
 
 .imagem-lolo3{
-    position: absolute;
-    left: 0; /*Ajuste a posição horizontal desejada */
-    bottom:4.7%; /*Ajuste a posição vertical desejada */
+   /* position: absolute;
+    left: 0; Ajuste a posição horizontal desejada */
+    /*bottom:3%; Ajuste a posição vertical desejada */
     z-index:999 ;  /*Garante que a imagem fique acima de outros elementos, se houver */
-    width: 300px;   /*Tamanho desejado */
+    width: 76%;   /*Tamanho desejado */
+    margin-left: 20px;
+    bottom: 50%;
+   
+    
+    
+}
+
+.imagem-lolo3 img{
+    width: 100%;   
+
 }
 
 
@@ -108,4 +132,20 @@ body{
         font-family: 'Montserrat, sans-serif';
         font-size:20px; 
     }
+
     
+    
+/* Media queries para telas de tamanho médio */
+@media screen and (max-width: 768px) {
+    .contanier {
+        flex-direction: column; /* Altera a direção para empilhar em telas menores */
+    }
+
+    .apresentacao-conteudo,
+    .imagem-lolo3 {
+        width: 100%; /* Ocupa toda a largura em telas menores */
+        margin-left: 0;
+        order: inherit;
+    }
+}
+
